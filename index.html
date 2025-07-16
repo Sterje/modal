@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Modal examples</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Modal 1</h1>
     <button id="openModalOne">Open Modal</button>
     <div id="modalOne" class="modal">
-        <div class="modal-content">
-            <span id="closeModalOne" class="close">&times;</span>
-            <p>This is example content in this modal</p>
-        </div>
+      <div class="modal-content">
+        <span id="closeModalOne" class="close">&times;</span>
+        <p>This is example content in this modal</p>
+      </div>
     </div>
     <h1>Modal 2</h1>
     <h2>Modal with animation</h2>
     <button id="openModalTwo">Open Modal</button>
     <div id="modalTwo" class="modalTwo">
-        <div class="modal-content">
-            <span id="closeModalTwo" class="close">&times;</span>
-            <p>This is example content in Modal 2</p>
+      <div class="modal-content">
+        <span id="closeModalTwo" class="close">&times;</span>
+        <p>This is example content in Modal 2</p>
+      </div>
+    </div>
+
+    <h1>Modal 3</h1>
+
+    <button id="openModalThree">Modal med val</button>
+
+    <div id="modalThree" class="modal">
+      <div class="modal-content">
+        <p>Är du säker på att du vill fortsätta?</p>
+        <div class="button-container">
+          <span id="okBtn">&check;</span>
+          <span id="cancelBtn">&times;</span>
         </div>
+      </div>
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
